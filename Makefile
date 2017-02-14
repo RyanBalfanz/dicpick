@@ -7,5 +7,8 @@ compilemessages:
 isort:
 	isort -rc main/ dicpick/
 
+makemessages:
+	python ../manage.py makemessages --all
+
 nuke_db:
 	python -m materiality.util.nuke_db
